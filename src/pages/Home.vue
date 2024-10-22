@@ -4,7 +4,7 @@ import CardPokemon from "../components/CardPokemon.vue";
 import { usePokemonStore } from "../store/pokemon.store";
 import { useRouter } from "vue-router";
 
-const currentImg = ref("https://cris0fw.github.io/site-pokedex/imagen2.png");
+const currentImg = ref("https://cris0fw.github.io/site-pokedex/imagen1.png");
 const bgColor = ref("#DC3336");
 
 const imgSlider = (color, anything) => {
@@ -89,7 +89,12 @@ onMounted(() => {
           class="transition duration-300 cursor-pointer hover:translate-y-[-15px]"
         >
           <img
-            @click="imgSlider('#DC3336', '/imagen1.png')"
+            @click="
+              imgSlider(
+                '#DC3336',
+                'https://cris0fw.github.io/site-pokedex/imagen1.png'
+              )
+            "
             class="w-[80px]"
             src="https://cris0fw.github.io/site-pokedex/imagen1.png"
             alt="imagen pokebola"
@@ -99,7 +104,12 @@ onMounted(() => {
           class="transition duration-300 cursor-pointer hover:translate-y-[-15px]"
         >
           <img
-            @click="imgSlider('#E2AC02', '/imagen2.png')"
+            @click="
+              imgSlider(
+                '#E2AC02',
+                'https://cris0fw.github.io/site-pokedex/imagen2.png'
+              )
+            "
             class="w-[80px]"
             src="https://cris0fw.github.io/site-pokedex/imagen2.png"
             alt="imagen pikachu"
@@ -109,7 +119,12 @@ onMounted(() => {
           class="transition duration-300 cursor-pointer hover:translate-y-[-15px]"
         >
           <img
-            @click="imgSlider('#E97F18', '/imagen3.png')"
+            @click="
+              imgSlider(
+                '#E97F18',
+                'https://cris0fw.github.io/site-pokedex/imagen3.png'
+              )
+            "
             class="w-[80px]"
             src="https://cris0fw.github.io/site-pokedex/imagen3.png"
             alt="imagen charizar"
