@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply tracking-wider text-white bg-gray-900 font-roboto;
+}
+
+html {
+  @apply overflow-x-hidden scroll-smooth;
+}
+section {
+  @apply py-20 md:py-28;
+}
+
+.title {
+  @apply text-3xl font-bold md:text-4xl xl:text-5xl;
+}
+
+.subtitle {
+  @apply text-2xl md:text-3xl xl:text-4xl;
+}
+
+.subtitle_encabezado {
+  @apply text-xl md:text-2xl xl:text-3xl;
+}
+
+.titulo {
+  text-shadow: -2px -2px 0 #395ea7, -2px 2px 0 #395ea7, 2px 2px 0 #395ea7,
+    2px -2px 0 #395ea7;
+}
+
+.clip-path-blob {
+  clip-path: polygon(
+    50% 0%,
+    60% 20%,
+    80% 20%,
+    100% 40%,
+    100% 60%,
+    80% 80%,
+    50% 100%,
+    20% 80%,
+    0% 60%,
+    0% 40%,
+    20% 20%
+  );
+}
+
+/* HEADER / NAVBAR */
+.nav-link {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.75rem;
+  font-weight: 700;
+  transition-duration: 300ms;
+  color: #facc15;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+}
+
+.nav-link:hover::after {
+  background-color: #3b82f6;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+}
+
+.botonFilter {
+  @apply px-2 py-2 rounded-md;
+}
+
+.verTodos {
+  @apply bg-[#ECECEC];
+}
+
+.normal {
+  @apply bg-[#A8A778];
+}
+
+.fuego {
+  @apply bg-[#EF8030];
+}
+
+.agua {
+  @apply bg-[#688FEF];
+}
+
+.planta {
+  @apply bg-[#7BC850];
+}
+
+.electrico {
+  @apply bg-[#F8D032];
+}
+
+.hielo {
+  @apply bg-[#98D8D9];
+}
+
+.luchador {
+  @apply bg-[#C12F2A];
+}
+
+.veneno {
+  @apply bg-[#9C409D];
+}
+
+.tierra {
+  @apply bg-[#E0BF65];
+}
+
+.volador {
+  @apply bg-[#A98FF1];
+}
+
+.psiquico {
+  @apply bg-[#F95888];
+}
+
+.bicho {
+  @apply bg-[#A8B821];
+}
+
+.roca {
+  @apply bg-[#B99F38];
+}
+
+.fantasma {
+  @apply bg-[#715897];
+}
+
+.oscuros {
+  @apply bg-[#705849];
+}
+
+.dragon {
+  @apply bg-[#7037FB];
+}
+
+.acero {
+  @apply bg-[#B7B7D0];
+}
+
+.hada {
+  @apply bg-[#EFB6BC];
+}
