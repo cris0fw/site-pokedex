@@ -4,5 +4,5 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: "https://cris0fw.github.io/site-pokedex/imagen2.png",
+  base: "https://cris0fw.github.io/site-pokedex",
 });
