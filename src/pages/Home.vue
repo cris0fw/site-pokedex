@@ -4,7 +4,7 @@ import CardPokemon from "../components/CardPokemon.vue";
 import { usePokemonStore } from "../store/pokemon.store";
 import { useRouter } from "vue-router";
 
-const currentImg = ref("/imagen1.png");
+const currentImg = ref(`${import.meta.env.BASE_URL}imagen1.png`);
 const bgColor = ref("#DC3336");
 
 const imgSlider = (color, anything) => {
@@ -53,7 +53,7 @@ onMounted(() => {
           <p class="text-gray-300 font-roboto">
             "Explora a fondo cada rincón del universo Pokémon con Dex Pokémon
             Total. Descubre las evoluciones de tus Pokémon y aprende cómo
-            mejorar tu equipo para ganar las batallas más difíciles. Desde los
+            mejorar tu equipo spara ganar las batallas más difíciles. Desde los
             Pokémon legendarios hasta los más comunes, encontrarás información
             detallada sobre sus habilidades, movimiesntos y estrategias.
             ¡Atrápalos, fortalécelos y conviértete en el mejor entrenador en
@@ -89,9 +89,11 @@ onMounted(() => {
           class="transition duration-300 cursor-pointer hover:translate-y-[-15px]"
         >
           <img
-            @click="imgSlider('#DC3336', '/imagen1.png')"
+            @click="
+              imgSlider('#DC3336', `${import.meta.env.BASE_URL}imagen1.png`)
+            "
             class="w-[80px]"
-            src="https://cris0fw.github.io/site-pokedex/imagen1.png"
+            :src="`${import.meta.env.BASE_URL}imagen1.png`"
             alt="imagen pokebola"
           />
         </li>
@@ -99,9 +101,11 @@ onMounted(() => {
           class="transition duration-300 cursor-pointer hover:translate-y-[-15px]"
         >
           <img
-            @click="imgSlider('#E2AC02', '/imagen2.png')"
+            @click="
+              imgSlider('#E2AC02', `${import.meta.env.BASE_URL}imagen2.png`)
+            "
             class="w-[80px]"
-            src="https://cris0fw.github.io/site-pokedex/imagen2.png"
+            :src="`${import.meta.env.BASE_URL}imagen2.png`"
             alt="imagen pikachu"
           />
         </li>
@@ -109,15 +113,18 @@ onMounted(() => {
           class="transition duration-300 cursor-pointer hover:translate-y-[-15px]"
         >
           <img
-            @click="imgSlider('#E97F18', '/imagen3.png')"
+            @click="
+              imgSlider('#E97F18', `${import.meta.env.BASE_URL}imagen3.png`)
+            "
             class="w-[80px]"
-            src="https://cris0fw.github.io/site-pokedex/imagen3.png"
+            :src="`${import.meta.env.BASE_URL}imagen3.png`"
             alt="imagen charizar"
           />
         </li>
       </ul>
     </div>
   </section>
+
   <div class="py-20 bg-gray-800 md:py-28 lg:py-14">
     <div id="buscar" class="container">
       <h2 class="mb-8 font-semibold text-center subtitle">Buscar tu Pokémon</h2>
