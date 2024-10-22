@@ -4,7 +4,7 @@ import CardPokemon from "../components/CardPokemon.vue";
 import { usePokemonStore } from "../store/pokemon.store";
 import { useRouter } from "vue-router";
 
-const currentImg = ref("https://cris0fw.github.io/site-pokedex/imagen1.png");
+const currentImg = ref("/imagen1.png");
 const bgColor = ref("#DC3336");
 
 const imgSlider = (color, anything) => {
